@@ -1,8 +1,41 @@
-.bkimg{
-    background-image: url(MacintoshHD/Users/jobo/Desktop/WebDev/labs/studentdigs/duncan-kidd.jpg);
+.bkimg {
+    background-image: url(/duncan-kidd.jpg);
     background-size: 100%;
 }
 
-a.changecol{
+a.changecol {
     color: #000000 !important;
- }
+}
+
+.join {
+    padding-top: 60%;
+    padding-bottom: 20%;
+}
+
+.maincontainer {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tagline{
+    visibility: hidden;
+}
+
+@media only screen and (max-width: 599px) {
+    .maincontainer {
+        flex-direction: column-reverse; 
+    }
+
+    .lcolumn {
+        width: 100%;
+    }
+
+    .rcolumn .bkimg {
+        order: -1;
+    }
+
+    .tagline{
+        visibility: visible;
+    }
+}
+
